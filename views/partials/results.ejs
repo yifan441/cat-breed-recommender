@@ -1,0 +1,15 @@
+<a href="/form">Restart</a>
+<br/>
+<% if(data.length > 0 ) { %>
+  <% data.forEach(cat => { %>
+    <div><%= cat.name %></div>
+    <img src=<%= cat.image_link %> width="200"/>
+  <% }) %>
+<% }else { %>
+  <div>Unfortunately we couldn't find any breeds that matched your requirements...please try adjusting some of your choices.</div>
+  <img src="images/no-results-found-cat.jpg" width="300"/>
+<% } %>
+<br/>
+<a href="/form">Restart</a>
+
+

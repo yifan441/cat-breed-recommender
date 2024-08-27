@@ -1,12 +1,10 @@
-<%= test %>
-
 <form id="myForm" action="/cats/results" method="GET">
   <div>
-    <h3>How much does your future cat shed?</h3>
+    <h3>How much does your future cat shed?*</h3>
 
     <span>None</span>
 
-    <input type="radio" id="shedding-1" name="shedding" value="1"/>
+    <input type="radio" id="shedding-1" name="shedding" value="1"/ required>
     <label for="shedding-1">1</label>
     
     <input type="radio" id="shedding-2" name="shedding" value="2"/>
@@ -24,11 +22,11 @@
     <span>A lot</span>
   </div>
   <div>
-    <h3>How affectionate do you want your cat to be?</h3>
+    <h3>How affectionate do you want your cat to be?*</h3>
 
     <span>Cool and aloof</span>
 
-    <input type="radio" id="affection-1" name="family_friendly" value="1"/>
+    <input type="radio" id="affection-1" name="family_friendly" value="1" required/>
     <label for="affection-1">1</label>
     
     <input type="radio" id="affection-2" name="family_friendly" value="2"/>
@@ -46,11 +44,11 @@
     <span>Has attachment issues</span>
   </div>
   <div>
-    <h3>How playful do you want your cat to be?</h3>
+    <h3>How playful do you want your cat to be?*</h3>
 
     <span>Serious</span>
 
-    <input type="radio" id="playful-1" name="playfulness" value="1"/>
+    <input type="radio" id="playful-1" name="playfulness" value="1" required/>
     <label for="playful-1">1</label>
     
     <input type="radio" id="playful-2" name="playfulness" value="2"/>
@@ -68,7 +66,7 @@
     <span>Very playful</span>
   </div>
   <div>
-    <h3>Do you want your cat to get along with other pets?</h3>
+    <h3>Do you want your cat to get along with other pets? (optional)</h3>
 
     <span>Hates other pets</span>
 
@@ -90,7 +88,7 @@
     <span>Great with other pets</span>
   </div>
   <div>
-    <h3>Do you want your cat to get along with children?</h3>
+    <h3>Do you want your cat to get along with children? (optional)</h3>
 
     <span>Hates children</span>
 
@@ -112,6 +110,7 @@
     <span>Kid-friendly</span>
   </div>
   <div>
+    <button type="reset">Reset</button>
     <button type="submit">Submit</button>
   </div>
 </form>
